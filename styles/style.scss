@@ -1743,6 +1743,7 @@ main {
 
         .form-group-item {
           width: 100%;
+          border-radius: 0;
         }
       }
 
@@ -1784,6 +1785,7 @@ main {
         padding: 16px 0px;
         max-width: 241px;
         height: 50px;
+        border-radius: 0;
 
         @media only screen and (max-width: 991px) {
           max-width: 100%;

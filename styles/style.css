@@ -1519,6 +1519,7 @@ main {
 }
 .stepper .step-7.form .form form .form-group-item {
   width: 100%;
+  border-radius: 0;
 }
 .stepper .step-7.form .form h3 {
   text-align: left;
@@ -1550,6 +1551,7 @@ main {
   padding: 16px 0px;
   max-width: 241px;
   height: 50px;
+  border-radius: 0;
 }
 @media only screen and (max-width: 991px) {
   .stepper .step-7.form .form input {
