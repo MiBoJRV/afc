@@ -813,6 +813,8 @@ main {
 
   @media only screen and (max-width: 991px) {
     padding: 40px 15px 115px;
+    background-position: right center;
+    background-size: cover;
   }
 
 
@@ -1254,6 +1256,7 @@ main {
         position: absolute;
         right: 0;
         bottom: 0;
+        z-index: 1;
         
         @media only screen and (max-width: 600px) {
           right: -50px;
@@ -1540,6 +1543,7 @@ main {
       flex-direction: column;
       gap: 24px;
       position: relative;
+      z-index: 10;
 
       @media only screen and (max-width: 991px) {
         gap: 28px;
@@ -2111,6 +2115,7 @@ main {
   align-items: center;
   gap: 32px;
   padding-top: 10px;
+  z-index: 10;
 
   & > div {
     color: #000;

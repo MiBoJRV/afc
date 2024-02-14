@@ -696,6 +696,8 @@ main {
 @media only screen and (max-width: 991px) {
   .contribute {
     padding: 40px 15px 115px;
+    background-position: right center;
+    background-size: cover;
   }
 }
 .contribute h2 {
@@ -1091,6 +1093,7 @@ main {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 @media only screen and (max-width: 600px) {
   .survey .slider .list-wrap .book {
@@ -1341,6 +1344,7 @@ main {
   flex-direction: column;
   gap: 24px;
   position: relative;
+  z-index: 10;
 }
 @media only screen and (max-width: 991px) {
   .stepper .slide .list {
@@ -1811,6 +1815,7 @@ main {
   align-items: center;
   gap: 32px;
   padding-top: 10px;
+  z-index: 10;
 }
 .dots-container > div {
   color: #000;
