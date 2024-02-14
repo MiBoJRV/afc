@@ -1946,6 +1946,7 @@ footer .copyright-content {
   footer .copyright-content {
     flex-direction: column-reverse;
     gap: 16px;
+    padding: 16px 30px;
   }
 }
 footer .copyright span {
