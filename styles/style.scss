@@ -1257,7 +1257,7 @@ main {
         right: 0;
         bottom: 0;
         z-index: 1;
-        
+
         @media only screen and (max-width: 600px) {
           right: -50px;
           height: 248px;
@@ -1771,6 +1771,7 @@ main {
         //border-radius: 10px;
         background: transparent;
         border: none;
+        border-radius: 0 !important;
 
         color: rgba(255, 255, 255, 0.5);
         font-style: normal;
@@ -1871,7 +1872,7 @@ main {
 
       .phone-cell1 input {
         border-left: none;
-        border-radius: 0 10px 10px 0 !important;
+        //border-radius: 0 10px 10px 0 !important;
         outline: none;
         max-width: 100%;
         border-radius: 0 !important;
@@ -2422,7 +2423,7 @@ footer {
     //border-radius: 10px;
     background: transparent;
     border: none;
-
+    border-radius: 0 !important;
     color: rgba(255, 255, 255, 0.5);
     font-style: normal;
     outline: none;

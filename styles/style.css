@@ -1541,6 +1541,7 @@ main {
   width: 100%;
   background: transparent;
   border: none;
+  border-radius: 0 !important;
   color: rgba(255, 255, 255, 0.5);
   font-style: normal;
   outline: none;
@@ -1614,7 +1615,6 @@ main {
 }
 .stepper .step-7.form .form .phone-cell1 input {
   border-left: none;
-  border-radius: 0 10px 10px 0 !important;
   outline: none;
   max-width: 100%;
   border-radius: 0 !important;
@@ -2090,6 +2090,7 @@ footer .copyright a {
   width: 100%;
   background: transparent;
   border: none;
+  border-radius: 0 !important;
   color: rgba(255, 255, 255, 0.5);
   font-style: normal;
   outline: none;
