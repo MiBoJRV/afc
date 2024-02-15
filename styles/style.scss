@@ -1661,6 +1661,8 @@ main {
   .step-7.form {
     .content {
       display: flex;
+      position: relative;
+      z-index: 100;
 
       @media only screen and (max-width: 991px) {
         flex-direction: column;
@@ -1717,6 +1719,8 @@ main {
         flex-direction: column;
         gap: 24px;
         max-width: 506px;
+        position: relative;
+        z-index: 100;
 
         .form-group {
           display: flex;

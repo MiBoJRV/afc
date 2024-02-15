@@ -1442,6 +1442,8 @@ main {
 }
 .stepper .step-7.form .content {
   display: flex;
+  position: relative;
+  z-index: 100;
 }
 @media only screen and (max-width: 991px) {
   .stepper .step-7.form .content {
@@ -1499,6 +1501,8 @@ main {
   flex-direction: column;
   gap: 24px;
   max-width: 506px;
+  position: relative;
+  z-index: 100;
 }
 .stepper .step-7.form .form form .form-group {
   display: flex;

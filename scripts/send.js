@@ -228,14 +228,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const fullNumber = `${areaCodeField}${phone}`;
 
         const data = {
-            ApiKey: 'TnpRek1sODFNVEJmTnpRek1sOD0=',
-            ApiPassword: 'c8UAV7s6G8',
-            CampaignID: '11230',
+            ApiKey: 'T0RFM04xODFNVEJmT0RFM04xOD0=',
+            ApiPassword: 'wP0847x385',
+            CampaignID: '11988',
             FirstName: firstName,
             LastName: lastName,
             Email: email,
             PhoneNumber: fullNumber,
-            Page: 'afc',
+            Page: 'afc_rec',
             Description: JSON.stringify(Object.values(selectedValues)),
         };
 
@@ -259,47 +259,72 @@ document.addEventListener("DOMContentLoaded", () => {
         })
             .then(response => {
                 if (response.ok) {
-                    console.log('response received successfully! ');
+                    console.log('Response received successfully! ');
                     navigateToSlide(8);
                     return response.json();
                 } else {
                     throw new Error('Failed to send lead data');
                 }
             })
-            .then(responseJson => {
-
-                // if (responseJson.ret_code !== 'OK') {
-                //     console.log('Не OK')
-                //     const message = document.querySelector('.message');
-                //     message.textContent = responseJson.ret_message;
-                // } else {
-                //     navigateToSlide(8);
-                // }
-
-
+      /*      .then(responseJson => {
                 // const message = document.querySelector('.message');
                 // message.textContent = responseJson.ret_message;
 
-                // if (responseJson.ret_code !== '404') {
-                //     window.location.href = 'thank-you.html';
-                //     const redirectUrl = responseJson.url;
-                //     window.location.href = redirectUrl;
-                //
-                //     localStorage.setItem('responseJson', JSON.stringify(responseJson));
-                //     window.location.href = 'thank-you.html';
-                //
-                //     const redirectUrl = responseJson.url;
-                //     window.location.href = redirectUrl;
-                //
-                //     new Promise(resolve => setTimeout(resolve, 1000))
-                //         .then(() => {
-                //             const redirectUrl = responseJson.url;
-                //             window.location.href = redirectUrl;
-                //         });
-                // } else {
-                //     console.log('Problem with redirect.');
-                // }
+                if (responseJson.ret_code !== '404') {
+                    // window.location.href = 'thank-you.html';
+                    // const redirectUrl = responseJson.url;
+                    // window.location.href = redirectUrl;
+
+                    // localStorage.setItem('responseJson', JSON.stringify(responseJson));
+                    // window.location.href = 'thank-you.html';
+
+                    const redirectUrl = responseJson.url;
+                    window.open(redirectUrl, '_blank');
+
+
+                    // new Promise(resolve => setTimeout(resolve, 1000))
+                    //     .then(() => {
+                    //         const redirectUrl = responseJson.url;
+                    //         window.location.href = redirectUrl;
+                    //     });
+                } else {
+                    console.log('Problem with redirect.');
+                }
+            })*/
+            // .then(responseJson => {
+            //     if (responseJson.ret_code !== '404') {
+            //         // window.location.href = 'thank-you.html';
+            //         // const redirectUrl = responseJson.url;
+            //         // window.location.href = redirectUrl;
+            //
+            //         localStorage.setItem('responseJson', JSON.stringify(responseJson));
+            //         window.location.href = 'thank-you.html';
+            //
+            //         new Promise(resolve => setTimeout(resolve, 1000))
+            //             .then(() => {
+            //                 const redirectUrl = responseJson.url;
+            //                 window.location.href = redirectUrl;
+            //             });
+            //     } else {
+            //         console.log('Problem with redirect.');
+            //     }
+            // })
+
+            .then(responseJson => {
+                if (responseJson.ret_code !== '404') {
+                    localStorage.setItem('responseJson', JSON.stringify(responseJson));
+                    window.open('thank-you.html', '_blank');
+
+                    new Promise(resolve => setTimeout(resolve, 1000))
+                        .then(() => {
+                            const redirectUrl = responseJson.url;
+                            window.open(redirectUrl, '_blank');
+                        });
+                } else {
+                    console.log('Problem with redirect.');
+                }
             })
+
             .catch(error => {
                 console.error('An error occurred:', error.message);
             });
