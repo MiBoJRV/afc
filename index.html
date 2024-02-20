@@ -1369,13 +1369,13 @@
         <h2>
             Save your time!
         </h2>
-        <p>Proceed to the survey to speed up your money recovery process. The Anti -Fraud Centre is your
+        <p>Proceed to the survey to speed up your money recovery process. The Anti - Fraud Centre is your
             best solution in money scam recovery!</p>
         <div class="button-survey">
             <a href="#survey">Take the Survey Now!</a>
         </div>
         <script>
-            document.addEventListener("DOMContentLoaded", function () {
+
                 const takeSurvey = document.querySelector(".take-survey");
                 const btnClose = document.querySelector(".btn-close");
                 const takeSurveyButton = document.querySelector(".take-survey .button-survey a");
@@ -1394,13 +1394,15 @@
                 function openPopup() {
                     takeSurvey.style.display = "flex";
                     document.body.style.overflow = "hidden";
-                    bodyContent.style.filter = 'blur(7px)'
+                    bodyContent.style.filter = 'blur(7px)';
+                    bodyContent.style.background = 'rgba(0, 0, 0, 0.30)';
                 }
 
                 function closePopup() {
                     takeSurvey.style.display = "none";
                     document.body.style.overflow = "auto";
                     bodyContent.style.filter = 'none'
+                    bodyContent.style.background = 'transparent';
                 }
 
                 setTimeout(openPopup, 1000);
@@ -1410,7 +1412,7 @@
                 // reserveButton.addEventListener("click", closePopup);
                 //
                 // rejectButton.addEventListener("click", closePopup);
-            });
+
 
         </script>
     </div>
