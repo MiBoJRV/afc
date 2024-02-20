@@ -27,6 +27,115 @@ body {
   position: relative;
 }
 
+.take-survey {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .take-survey {
+    padding: 10px;
+  }
+}
+.take-survey .btn-close {
+  position: absolute;
+  right: 16px;
+  top: 22px;
+  cursor: pointer;
+}
+.take-survey .btn-close img {
+  width: 28px;
+  height: 28px;
+}
+@media only screen and (max-width: 991px) {
+  .take-survey .btn-close img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.take-survey h2 {
+  color: #FFF;
+  font-family: Merriweather;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.take-survey p {
+  color: #FFF;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 27px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+@media only screen and (max-width: 991px) {
+  .take-survey p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px;
+    padding-bottom: 26px;
+  }
+}
+.take-survey .button-survey a {
+  margin: 40px auto 0;
+  border-radius: 4px;
+  padding: 10px 24px;
+  width: 265px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0 0 rgba(15, 21, 27, 0.2);
+  background: #e2a328;
+  color: #1F3143;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .take-survey .button-survey a {
+    margin: 26px auto 0;
+  }
+}
+.take-survey .button-survey a:hover {
+  box-shadow: 4px 4px 0 0 rgba(15, 21, 27, 0.5);
+  background: #f7b433;
+}
+.take-survey .button-survey a:active {
+  background: #cc901b;
+  box-shadow: none;
+}
+.take-survey .content-wrap {
+  max-width: 908px;
+  width: 100%;
+  padding: 66px 40px;
+  z-index: 1000;
+  background: #1F3143;
+  overflow: hidden;
+  position: relative;
+  overflow-y: scroll;
+  height: auto;
+}
+@media only screen and (max-width: 991px) {
+  .take-survey .content-wrap {
+    padding: 66px 20px 40px;
+  }
+}
+
 .button-mobile-menu {
   display: none;
   position: absolute;

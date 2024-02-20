@@ -27,4 +27,7 @@ mobileMenuLinks.forEach(function (link) {
         document.body.style.overflow = ''; // Забираємо overflow: hidden
     });
 });
+
+
+
 });
